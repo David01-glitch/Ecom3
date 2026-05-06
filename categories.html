@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Categories — Shop All Senior Gadgets | SilverTech</title>
+<meta name="description" content="Browse all SilverTech gadget categories — easy phones, hearing helpers, safety alerts, health watches, big-button remotes and more." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4J046JXWVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4J046JXWVC');
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="container nav">
+    <a href="index.html" class="logo"><span class="dot">S</span> SilverTech</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html" class="active">Categories</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="cta" onclick="location.href='#all'">Shop All</button>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="bread"><a href="index.html">Home</a> / Categories</div>
+    <h1>Shop By <span>Category</span></h1>
+    <p>Filter our full lineup of senior-friendly gadgets — every item is hand-tested by adults aged 65+ before it lands here.</p>
+  </div>
+</section>
+
+<!-- CATEGORY TILES -->
+<section class="container">
+  <div class="cats">
+    <a href="#phones" class="cat" onclick="document.querySelector('[data-cat=phones]').click()">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&q=80" alt="Easy phones">
+      <div class="label">Easy Phones<br/><span>6 products →</span></div>
+    </a>
+    <a href="#hearing" class="cat" onclick="document.querySelector('[data-cat=hearing]').click()">
+      <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=600&q=80" alt="Hearing helpers">
+      <div class="label">Hearing Helpers<br/><span>4 products →</span></div>
+    </a>
+    <a href="#safety" class="cat" onclick="document.querySelector('[data-cat=safety]').click()">
+      <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80" alt="Safety alerts">
+      <div class="label">Safety & Alerts<br/><span>5 products →</span></div>
+    </a>
+    <a href="#health" class="cat" onclick="document.querySelector('[data-cat=health]').click()">
+      <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600&q=80" alt="Health watches">
+      <div class="label">Health & Watches<br/><span>4 products →</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- FILTER + PRODUCTS -->
+<section class="container" id="all">
+  <div class="section-head">
+    <span class="eyebrow">All Products</span>
+    <h2>Find The Right Gadget</h2>
+    <p>Click a filter — the grid updates instantly.</p>
+  </div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-cat="all">All</button>
+    <button class="filter-btn" data-cat="phones">Easy Phones</button>
+    <button class="filter-btn" data-cat="hearing">Hearing Helpers</button>
+    <button class="filter-btn" data-cat="safety">Safety & Alerts</button>
+    <button class="filter-btn" data-cat="health">Health & Watches</button>
+    <button class="filter-btn" data-cat="home">Home & Remotes</button>
+  </div>
+
+  <div class="products">
+
+    <div class="card" data-cat="phones">
+      <div class="img"><img src="https://images.unsplash.com/photo-1592890288564-76628a30a657?w=700&q=80" alt="Big button phone"></div>
+      <div class="body">
+        <span class="tag">Best Seller</span>
+        <h3>EasyDial Senior Phone</h3>
+        <p class="desc">Extra-large 1-inch buttons, loud ringer, photo speed-dial.</p>
+        <div class="row"><div class="price">$89 <small>$129</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="phones">
+      <div class="img"><img src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=700&q=80" alt="Flip phone"></div>
+      <div class="body">
+        <span class="tag green">Simple</span>
+        <h3>FlipEasy 3G Phone</h3>
+        <p class="desc">Classic flip design, hearing-aid compatible, SOS button.</p>
+        <div class="row"><div class="price">$69 <small>$99</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="phones">
+      <div class="img"><img src="https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?w=700&q=80" alt="Smart simplified phone"></div>
+      <div class="body">
+        <span class="tag">Popular</span>
+        <h3>JitterClear Smart Phone</h3>
+        <p class="desc">Simplified Android with huge icons & one-touch help.</p>
+        <div class="row"><div class="price">$159 <small>$199</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="hearing">
+      <div class="img"><img src="https://images.unsplash.com/photo-1617470702892-da4f436b7afc?w=700&q=80" alt="Hearing amplifier"></div>
+      <div class="body">
+        <span class="tag">New</span>
+        <h3>ClearSound Pro Amplifier</h3>
+        <p class="desc">Rechargeable, near-invisible — 40dB boost, noise cancel.</p>
+        <div class="row"><div class="price">$149 <small>$199</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="hearing">
+      <div class="img"><img src="https://images.unsplash.com/photo-1559563458-527698bf5295?w=700&q=80" alt="TV listener"></div>
+      <div class="body">
+        <span class="tag green">TV Helper</span>
+        <h3>TV Listener Wireless Headset</h3>
+        <p class="desc">Crystal clear TV audio without disturbing others.</p>
+        <div class="row"><div class="price">$79 <small>$119</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="safety">
+      <div class="img"><img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=700&q=80" alt="SOS pendant"></div>
+      <div class="body">
+        <span class="tag">Top Rated</span>
+        <h3>SafeAlert SOS Pendant</h3>
+        <p class="desc">One-press emergency call, GPS tracking, fall detection.</p>
+        <div class="row"><div class="price">$119 <small>$159</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="safety">
+      <div class="img"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=700&q=80" alt="Smart doorbell"></div>
+      <div class="body">
+        <span class="tag green">Easy Install</span>
+        <h3>SeeWho Video Doorbell</h3>
+        <p class="desc">See visitors on a 7-inch screen — no smartphone needed.</p>
+        <div class="row"><div class="price">$129 <small>$179</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="safety">
+      <div class="img"><img src="https://images.unsplash.com/photo-1558002038-bb4237b50b11?w=700&q=80" alt="Motion light"></div>
+      <div class="body">
+        <span class="tag">Bundle</span>
+        <h3>NightSafe Motion Lights (4-pack)</h3>
+        <p class="desc">Auto-on hallway lights — prevent night-time falls.</p>
+        <div class="row"><div class="price">$49 <small>$79</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="health">
+      <div class="img"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=700&q=80" alt="Smart watch"></div>
+      <div class="body">
+        <span class="tag green">Health</span>
+        <h3>VitalCheck Watch</h3>
+        <p class="desc">Heart rate, blood oxygen, fall alerts — no phone needed.</p>
+        <div class="row"><div class="price">$169 <small>$229</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="health">
+      <div class="img"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80" alt="BP monitor"></div>
+      <div class="body">
+        <span class="tag">Doctor-Approved</span>
+        <h3>BP Buddy Blood Pressure Monitor</h3>
+        <p class="desc">Auto upper-arm cuff, stores 60 readings, big LCD.</p>
+        <div class="row"><div class="price">$59 <small>$89</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="health">
+      <div class="img"><img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=700&q=80" alt="Pill dispenser"></div>
+      <div class="body">
+        <span class="tag green">Smart</span>
+        <h3>PillPal Auto Dispenser</h3>
+        <p class="desc">28-day capacity, locked, alarms when it's medication time.</p>
+        <div class="row"><div class="price">$99 <small>$139</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="home">
+      <div class="img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=700&q=80" alt="Universal remote"></div>
+      <div class="body">
+        <span class="tag">Bundle Deal</span>
+        <h3>BigButton TV Remote</h3>
+        <p class="desc">6 oversized buttons, glow-in-dark, works any TV.</p>
+        <div class="row"><div class="price">$39 <small>$59</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="home">
+      <div class="img"><img src="https://images.unsplash.com/photo-1576243345690-4e4b79b63288?w=700&q=80" alt="Senior tablet"></div>
+      <div class="body">
+        <span class="tag green">Easy Setup</span>
+        <h3>GrandPad Easy Tablet</h3>
+        <p class="desc">10" screen with simple icons, video call shortcuts.</p>
+        <div class="row"><div class="price">$199 <small>$249</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+    <div class="card" data-cat="home">
+      <div class="img"><img src="https://images.unsplash.com/photo-1543512214-318c7553f230?w=700&q=80" alt="Voice speaker"></div>
+      <div class="body">
+        <span class="tag">Voice First</span>
+        <h3>Echo Companion Speaker</h3>
+        <p class="desc">"Call my daughter" — voice-controlled help, music, news.</p>
+        <div class="row"><div class="price">$69 <small>$99</small></div><button class="add">Add to Cart</button></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cta-band" style="margin-top:80px">
+    <h2>Can't Decide? Let Us Help.</h2>
+    <p>Tell us about your loved one and we'll suggest the perfect bundle — free, no pressure.</p>
+    <button onclick="location.href='contact.html'">Get a Free Recommendation</button>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <div class="logo"><span class="dot">S</span> SilverTech</div>
+        <p>Modern gadgets designed for older adults — making technology feel like home.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">◐</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div><h4>Shop</h4><ul>
+        <li><a href="categories.html#phones">Easy Phones</a></li>
+        <li><a href="categories.html#hearing">Hearing Helpers</a></li>
+        <li><a href="categories.html#safety">Safety Alerts</a></li>
+        <li><a href="categories.html#health">Health Watches</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul></div>
+      <div><h4>Get In Touch</h4><ul>
+        <li>📧 secomer21@gmail.com</li>
+        <li>📞 +1 (302) 504-2829</li>
+        <li>📍 1209 N Orange St,<br/>Wilmington, DE 19801</li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">© 2026 SilverTech LLC. All rights reserved. Made with ♥ in the USA.</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
